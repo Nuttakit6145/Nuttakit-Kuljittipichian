@@ -5,10 +5,58 @@
         <title>Contact </title>
  </head>
  <body>
-      <a href="index.html"> back </a>
+    <a href="HomePag.html"> back </a>
        <p>Email : Nuttakit2704@gmail.com</p>
        <p>Facebook : Nuttakit Kuljittipichian</p>
        <p>Tel : 064 - 112 - 4508</p>
+
+   <style>
+    tr {
+      border-style: none; 
+      border-top-style: dotted;
+      border-color: rgb(17, 16, 16);
+      border-width:2px;
+      width: 80%;
+      }
+   </style>
+
+   <hr style="border-style:dotted;">
+   <h3>ติดต่อฉัน</h3>
+   <form id="Form1" class="" action="mailto:Nuttakit2704@gmail.com" method="post" enctype="text/plain">
+   <table>
+     <tr>
+       <td><strong>ชื่อ-สกุล : </strong></td>
+       <td><input type="text" name="name_surname" placeholder="ชื่อ - สกุล" value=""></td>
+     </tr>
+     <tr>
+       <td><strong>Email : </strong> </td>
+       <td> <input type="email" name="email" placeholder="EMAIL" value=""> </td>
+     </tr>
+     <tr>
+       <td><strong>ข้อความที่ต้องการส่ง : </strong> </td>
+       <td> <textarea name="message" rows="8" cols="80"></textarea> </td>
+     </tr>
+   </table>
+   <br>
+   <br/>
+   <div class="groupBtn">
+     <button type="submit" onclick="btnSubmit()" name="button" style="background-color:green; color:white; width:70px; height:40px; font-size:18px;" >submit</button>
+     <a href="HomePag.html"><button type="button" style="background-color:black; color:white; width:60px; height:40px; font-size:18px;"  name="button">back</button></a>
+   </div>
+   </form>
+   <script type="text/javascript">
+   function btnSubmit() {
+             alert("Success!!");
+             document.getElementById("name").value = "";
+             document.getElementById("email").value = "";
+             document.getElementById("msg").value = "";
+   }
+   </script>
+
+
+
+
+
 
  </body>
 </html>
